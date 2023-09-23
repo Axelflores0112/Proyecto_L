@@ -1,0 +1,40 @@
+body{
+    background: #000046;  
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  
+    background: linear-gradient(to right, #1CB5E0, #000046); 
+
+}
+.container{
+    padding: 125px;
+}
+.card{
+    box-shadow: 10px 5px 5px black;
+}
+#email{
+    border-radius: 5px;
+}
+#password{
+    border-radius: 5px;
+}
+#boton{
+    border: 0px;
+    border-radius: 100px;
+
+}
+label::placeholder{
+    font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+}
+.form-correct{
+    color:#1ed12d;
+    Border:3px solid #1ed12d;
+    border-radius: 10px;
+}
+.form-incorrect{
+    color: #bb2929;
+    Border:3px solid #bb2929;
+    border-radius: 10px;
+}
+.form_error_activo{
+    display: block;
+}
