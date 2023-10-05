@@ -1,0 +1,11 @@
+-----Hacer commits-----
+git status
+git add .
+git status
+git commit -m "mensaje"
+git pull
+git push
+-----Actualizar y ver los cambios en el repositorio-----
+git fetch
+git pull
+git push
