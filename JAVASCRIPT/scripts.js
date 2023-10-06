@@ -13,12 +13,11 @@ const expresiones = { //expresiones regulares par validacion.
 
 }
 
-//Funcion de validación de los inputs del formulario.
+//Funcion para borrar alerta de inputs.
 const borrarAlerta = ()=>{
-	if(!email.value=="" || !clave.value==""){
+	if( email.value!=""|| !clave.value!=""){
 		document.getElementById("email_vacio").style.display="none";
 		document.getElementById("clave_vacia").style.display="none";
-		e.preventDefault();
 	}
 }
 const validarForm = (e)=>{
@@ -32,7 +31,7 @@ const validarForm = (e)=>{
 	}
 };
 
-const validarCampo=(expresion,input,campo) => {
+const validarCampo=(expresion,input,campo) => {//Funcion para validar campo
 	if (expresion.test(input.value)) {
 		document.getElementById(`grupo_${campo}`).classList.remove('form-incorrect');
 		document.getElementById(`grupo_${campo}`).classList.add('form-correct');
@@ -47,15 +46,15 @@ const validarCampo=(expresion,input,campo) => {
 }
 //Accion que va ser evaluada por la funcion de comprobacion.
 inputs.forEach((input)=>{
-    input.addEventListener('keyup', validarForm)
-    input.addEventListener('blur', validarForm)
-    input.addEventListener('keydown', borrarAlerta)
+    input.addEventListener('keyup', validarForm);
+    input.addEventListener('blur', validarForm);
+    input.addEventListener('keydown', borrarAlerta);
 });
 //////////////////////////////////////////////////////////////////////////////////////////
 
 
 //funcion para comprobar que esten llenos los inputs
-formulario.addEventListener('submit', (e) => {
+formulario.addEventListener('submit', (e) =>{
 	if(email.value==""){
 		document.getElementById("email_vacio").style.display="block";
 		document.getElementById("email_vacio").style.color="red";
@@ -73,5 +72,5 @@ formulario.addEventListener('submit', (e) => {
 		document.getElementById("clave_vacia").style.display="none";
 		e.preventDefault();////funcion para detener la accion de envio de datos
 	}
-	
+	e.preventDefault();
 });
