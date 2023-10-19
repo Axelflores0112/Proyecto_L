@@ -40,7 +40,7 @@
                                 <button type="submit" class="bt btn-primary border-dark btn-lg " id="boton">Iniciar sesion</button>
                             </div>
                             <div class="my-3 text-center">
-                                <span>No tienes cuenta? </span><a href="Form.html" class="text-decoration-none">Crear cuenta</a>
+                                <span>No tienes cuenta? </span><a href="PHP/Form.php" class="text-decoration-none">Crear cuenta</a>
                             </div>
                             </form>
                             </div>

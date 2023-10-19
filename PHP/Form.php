@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="CSS/style_form.css">
+    <link rel="stylesheet" href="../CSS/style_form.css">
     <title>Formulario</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
             <div class="container 12 col-sm-8 col-md-6 m" >
                 <div class="container mt-5 m p-5" id="cont_form">
                     <center><h3>Datos</h3></center>
-                    <form action="Register" method="post" id="registro">
+                    <form action="" method="post" id="registro">
                         <div class="mb-3" id="nombre_form">
                             <div class="form-floating" id="grupo_nombre">
                                 <input type="text" class="form-control" name="nombre" id="nombre" placeholder="">
@@ -41,13 +41,17 @@
                             <button type="submit" class="bt btn-primary border-dark btn-lg " id="boton">Iniciar sesion</button>
                         </div>
                         <div class="my-3 text-center">
-                            <span>Ya tienes cuenta? </span><a href="index.html" class="text-decoration-none">Inicar sesion</a>
+                            <span>Ya tienes cuenta? </span><a href="../index.php" class="text-decoration-none">Inicar sesion</a>
                         </div>
+                        <?php
+                    include("registro.php");
+                    ?>
                     </form>
+          
                 </div>
             </div>
         </div>
     </div>
 </body>
-<script src="JAVASCRIPT/scripts_form.js"></script>
+<script src="../JAVASCRIPT/scripts_form.js"></script>
 </html>
