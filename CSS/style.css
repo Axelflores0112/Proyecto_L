@@ -5,16 +5,17 @@ body{
 
 }
 .container{
-    padding: 125px;
+    padding: 1%;
 }
 .card{
     box-shadow: 10px 5px 5px black;
+    width: 100%;
+    height: 100%;
 }
-#email{
-    border-radius: 5px;
-}
-#password{
-    border-radius: 5px;
+#email,#password{
+    border: 0;
+    border-bottom: 1px black solid;
+    border-radius: 0px;
 }
 #boton{
     border: 0px;
@@ -35,6 +36,16 @@ label::placeholder{
     Border:3px solid #bb2929;
     border-radius: 10px;
 }
-.form_error_activo{
-    display: block;
+input:focus, select:focus, select, input.form-control:focus {/*Quitar el borde azul de bootstrap*/
+
+    outline:none !important;
+
+    outline-width: 0 !important;
+
+    box-shadow: none;
+
+    -moz-box-shadow: none;
+
+    -webkit-box-shadow: none;
+
 }

@@ -12,7 +12,7 @@
         <div class="container m-auto">
             <div class="row">
                     <div class="col-12 col-sm-8 col-md-6 m-auto ">
-                        <div class="card border-dark p-3">
+                        <div class="card border-dark">
                             <div class="card-body">
                                 <img src="images/login-icon1.png" alt="" class="img-fluid mx-auto d-block">
                                 <h2 class="text-center pt-3 fw-bolder">Bienvenido</h2>
@@ -45,14 +45,9 @@
                             </form>
                             </div>
                         </div>
-
                     </div>
-
-
             </div>
-       
         </div>
-       
     </body>
     <script src="JAVASCRIPT/scripts.js"></script>
 </html>

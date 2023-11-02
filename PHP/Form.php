@@ -15,7 +15,7 @@
             <div class="container 12 col-sm-8 col-md-6 m" >
                 <div class="container mt-5 m p-5" id="cont_form">
                     <center><h3>Datos</h3></center>
-                    <form action="" method="post" id="registro">
+                    <form action="conexion.php" method="post" id="registro">
                         <div class="mb-3" id="nombre_form">
                             <div class="form-floating" id="grupo_nombre">
                                 <input type="text" class="form-control" name="nombre" id="nombre" placeholder="">
@@ -38,16 +38,12 @@
                             <p id="email_vacio" style="display: none;">Email no valido</p>
                         </div><br>
                         <div class="text-center d-grid">
-                            <button type="submit" class="bt btn-primary border-dark btn-lg " id="boton">Iniciar sesion</button>
+                            <button type="submit" class="bt btn-primary border-dark btn-lg " id="boton" name="registrar">Registrarse</button>
                         </div>
                         <div class="my-3 text-center">
                             <span>Ya tienes cuenta? </span><a href="../index.php" class="text-decoration-none">Inicar sesion</a>
                         </div>
-                        <?php
-                    include("registro.php");
-                    ?>
                     </form>
-          
                 </div>
             </div>
         </div>

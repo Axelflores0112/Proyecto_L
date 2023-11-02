@@ -69,6 +69,6 @@ registro.addEventListener('submit', (e) =>{
 	}else{
 		document.getElementById("email_vacio").style.display="none";
 	}
-	e.preventDefault();
+	//e.preventDefault();
 });
 
