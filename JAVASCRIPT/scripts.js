@@ -15,7 +15,7 @@ const expresiones = { //expresiones regulares par validacion.
 
 //Funcion para borrar alerta de inputs.
 const borrarAlerta = ()=>{
-	if( email.value!=""|| !clave.value!=""){
+	if( email.value!=""|| clave.value!=""){
 		document.getElementById("email_vacio").style.display="none";
 		document.getElementById("clave_vacia").style.display="none";
 	}
@@ -26,7 +26,7 @@ const validarForm = (e)=>{
 		validarCampo(expresiones.correo,e.target,'correo');
 		break;
 		case "password":
-			validarCampo(expresiones.password,e.target,'password')
+		validarCampo(expresiones.password,e.target,'password');
 		break;
 	}
 };
@@ -55,7 +55,7 @@ inputs.forEach((input)=>{
 
 //funcion para comprobar que esten llenos los inputs
 formulario.addEventListener('submit', (e) =>{
-	if(email.value==""){
+	if(str){
 		document.getElementById("email_vacio").style.display="block";
 		document.getElementById("email_vacio").style.color="red";
 		e.preventDefault();////funcion para detener la accion de envio de datos
