@@ -7,7 +7,7 @@ class Data_base{
 
     protected $conexion;
 
-    public function __construct(){
+    public function __construct(){//inicializar base de datos al instanciar clase
         $this->conexion();
     }
 
@@ -17,6 +17,10 @@ class Data_base{
         if($this->conexion->connect_error){
             die("Hubo un problema en la conexion".$this->conexion->connect_error);
         }
+    }
+
+    public function query(){//metodo para hacer consultas a base de datos.
+       return $this->conexion->query('SELECT * FROM datos_usuario')->fetch_all(MYSQLI_ASSOC);
     }
 }
 ?>
