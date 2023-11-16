@@ -19,8 +19,12 @@ class Data_base{
         }
     }
 
-    public function query(){//metodo para hacer consultas a base de datos.
-       return $this->conexion->query('SELECT * FROM datos_usuario')->fetch_all(MYSQLI_ASSOC);
+    public function query($sql){//metodo para hacer consultas a base de datos.
+        
+    }
+    public function register($sql){//metodo para hacer consultas a base de datos.
+        $registro=$this->conexion->prepare($sql);
+        
     }
 }
 ?>
